@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Template</title>
+
+    <!-- boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <main class="main grid">
+        <nav class="nav">
+            <div class="container nav_bar flex">
+                <div class="logo">
+                    <a href="#">
+                        <h1>Blog</h1>
+                    </a>
+                </div>   
+                <i class='bx bx-menu menu_tab-icon' id='menu-tab'></i>
+                <ul class="menu flex"  id="menu">
+                    <li class="menu_list">
+                        <a href="#" class="menu_link">
+                            <i class='bx bx-home menu-icon'></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="#" class="menu_link">
+                            <i class='bx bx-info-square menu-icon'></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="menu_list">
+                        <div class="menu_search">
+                            <input type="text" id="input-search" name="blogsearch" placeholder="Search...">
+                            <button class="btn btn-search" id="btnsearch">
+                                <i class='bx bx-search search-icon'></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="container_header container">
+                <h1 class="header_title">Welcome to My Blog</h1>
+                <div class="header_content content flex">
+                    <div class="header_data">
+                        <div class="header_label">
+                            <i class='bx bx-show-alt'></i>
+                            10,000
+                        </div>
+                        <p class="header_message">View All</p>
+                    </div>
+                    <div class="header_data">
+                        <div class="header_label score_star">
+                            <i class='bx bxs-star icon-star'></i>
+                            <i class='bx bxs-star icon-star'></i>
+                            <i class='bx bxs-star icon-star'></i>
+                            <i class='bx bxs-star-half icon-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <p class="header_message">3.5</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="blog_container container grid">
+
+            <!-- Start Blog Item -->
+            <div>
+                <div class="item" id="data-content"></div>
+                    <!--Start Pagination -->
+                    <div class="pagination flex" id="pagination"></div>
+                    <!--End Pagination -->
+            </div>
+            <!--End Blog Item -->
+
+            <div class="blog_sidebar content">
+                <div class="sidebar_data sidebar_data-top gird">
+                    <h3 class="sidebar_title-name">Tiffuny Lena</h3>
+                    <p class="sidebar_subtitle">graphic design</p>
+                    <img src="assets/img/user.jpg" class="sidebar_img img">
+                    <ul class="sidebar_social grid">
+                        <li class="sidebar_list">
+                            <a href="#" class="sidebar_link btn"><i class='bx bxl-facebook-circle sidebar-icon'></i></a>
+                        </li>
+                        <li class="sidebar_list">
+                            <a href="#" class="sidebar_link btn"><i class='bx bxl-twitter sidebar-icon' ></i></a>
+                        </li>
+                        <li class="sidebar_list">
+                            <a href="#" class="sidebar_link btn"><i class='bx bxl-linkedin sidebar-icon' ></i></a>
+                        </li>
+                        <li class="sidebar_list">
+                            <a href="#" class="sidebar_link btn"><i class='bx bxl-github sidebar-icon'></i></a>
+                        </li>
+                    </ul>
+                    <div class="button">
+                        <a class="btn btn-contact">contact <i class='bx bx-send contact-icon' ></i></a>
+                    </div>
+                </div>
+                <div class="sidebar_data">
+                    <h3 class="sidebar_title">Latest : </h3>
+                        <div class="sidebar_lates">
+                            <img src="assets/img/bussiness_team.jpg" alt="latest-img" class="sidebar_lates-img img">
+                            <a href="#" class="lates-link">
+                                PLANNING MEETING
+                            </a>
+                        </div>
+                </div>
+                <div class="sidebar_data">
+                    <h3 class="sidebar_title">Category : </h3>
+                        <ul class="sidebar_tag">
+                            <li>
+                                <a href="#" class="btn btn-link">
+                                    <i class='bx bxs-tag-alt breadcrumbs-icon'></i>
+                                    Graphic
+                                </a>
+                            </li>
+                            <li>                                
+                                <a href="#" class="btn btn-link">
+                                    <i class='bx bxs-tag-alt breadcrumbs-icon'></i>
+                                    Business
+                                </a>
+                            </li>
+                            <li>                                
+                                <a href="#" class="btn btn-link">
+                                    <i class='bx bxs-tag-alt breadcrumbs-icon'></i>
+                                    Frontend
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p class="footer_detail">
+                Copyright &copy;
+                <span class="bg-white"><a href="#" class="text-footer">Arairor.com</a></span>
+                for free
+            </p>
+        </footer>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
